@@ -1,3 +1,10 @@
+## 7.2.0
+- Add test target for netcoreapp3.0.
+- Extend PolicyRegistry with concurrent method support, TryAdd, TryRemove, TryUpdate, GetOrAdd, AddOrUpdate; new interface IConcurrentPolicyRegistry
+- Improve .NET Framework support: Add explicit targets for .NET Framework 4.6.1 and 4.7.2.
+- TimeoutPolicy: if timeout occurs while a user exception is being marshalled (edge case race condition), do not mask user exception (fix issue 620)
+- Enhance debugging/stacktrace experience for some contexts: Include pdb symbols in package again.
+
 ## 7.1.1
 - Bug fix: ensure async retry policies honor continueOnCapturedContext setting (affected v7.1.0 only).
 - Remove deprecated cake add-in from build
