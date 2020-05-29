@@ -4,19 +4,20 @@
     <TargetFrameworks>netstandard1.1;netstandard2.0;net461;net472</TargetFrameworks>
     <AssemblyName>Polly</AssemblyName>
     <RootNamespace>Polly</RootNamespace>
-    <Version>7.1.1</Version>
+    <Version>7.2.1</Version>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
-    <FileVersion>7.1.1.0</FileVersion>
-    <InformationalVersion>7.1.1.0</InformationalVersion>
-    <PackageVersion>7.1.1</PackageVersion>
+    <FileVersion>7.2.1.0</FileVersion>
+    <InformationalVersion>7.2.1.0</InformationalVersion>
+    <PackageVersion>7.2.1</PackageVersion>
     <Company>App vNext</Company>
-    <Copyright>Copyright (c) 2019, App vNext</Copyright>
+    <Copyright>Copyright (c) 2020, App vNext</Copyright>
     <Description>Polly is a library that allows developers to express resilience and transient fault handling policies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, and Fallback in a fluent and thread-safe manner.</Description>
     <DefaultLanguage>en-US</DefaultLanguage>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Authors>Michael Wolfenden, App vNext</Authors>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Label="SourceLink">
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -24,7 +25,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   <ItemGroup Label="SourceLink">
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <Optimize>true</Optimize>
